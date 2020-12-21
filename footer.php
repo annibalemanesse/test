@@ -1,6 +1,6 @@
     </section>
     <footer>
-        <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>blissim/index.php">Retour à l'accueil</a><br>
+        <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>test/index.php">Retour à l'accueil</a><br>
         <small class="credits">Créé par Anaïs Benslimane, le 18 Décembre 2020 pour Blissim</small>
     </footer>
     <script>
