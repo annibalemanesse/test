@@ -14,7 +14,7 @@ $user = new User();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>blissim/public/style.css">
+    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>test/public/style.css">
     <script src="https://kit.fontawesome.com/a330a8542c.js" crossorigin="anonymous"></script>
 
     <title>Echantillon de produits</title>
@@ -26,14 +26,11 @@ $user = new User();
                 <?php
                 if($user->isLogged()) :?>
                     <p>Bienvenue <?= $_SESSION['username'] ?> !</p>
-                    <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>blissim/views/logout.php">Se déconnecter </a>
+                    <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>test/views/logout.php">Se déconnecter </a>
                 <?php else : ?>
-                    <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>blissim/views/register.php">S'inscrire</a> / <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>blissim/views/login.php">Se connecter</a>
+                    <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>test/views/register.php">S'inscrire</a> / <a href="http://<?= $_SERVER['HTTP_HOST'] .'/' ?>test/views/login.php">Se connecter</a>
                 <?php endif ?>
 
             </div>
     </header>
     <section class="container">
-        <?php if(isset($message)) : ?>
-        <span><?= $message ?></span>
-        <?php endif ?>
