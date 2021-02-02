@@ -1,4 +1,4 @@
-TEST TECHNIQUE 
+Exercice
 # MySQL
 ##### Récupérer le prénom et le nom de famille de tous les clients qui ont commandé le produit PRODUIT_1; 
 ` SELECT `firstName`, `lastName` FROM `customer`
