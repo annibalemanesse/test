@@ -1,6 +1,6 @@
 Exercice
 # MySQL
-##### Récupérer le prénom et le nom de famille de tous les clients qui ont commandé le produit PRODUIT_1; 
+##### Récupérer le prénom et le nom de famille de tous les clients qui ont commandé le produit PRODUIT_1.
 ` SELECT `firstName`, `lastName` FROM `customer`
      JOIN `order` ON customer.id = `order`.id_customer
      JOIN `order_details` ON `order`.id = `order_details`.`id_order`
@@ -32,7 +32,7 @@ Exercice
 
 - l'application étant de taille réduite, je n'ai pas développé en MVC, bien que j'aie séparé certaines vues du code pour un minimum de clarté.
 - J'ai volontairement peu commenté mon code car je m'entraîne à le rendre lisible et compréhensible.
-- Lors de l'ajout ou de la modification d'un commentaire, il est nécessaire de recharger la page pour que le nouveau commentaire s'affiche. Je pense qu'il faudrait récupérer les commentaires après le script vérifiant la soumission et récupérant le `$_POST` mais en dépit de tous mes essais, ça ne fonctionnait pas.
+- Lors de l'ajout ou de la modification d'un commentaire, il est nécessaire de recharger la page pour que le nouveau commentaire s'affiche. J'ai choisi de ne pas utiliser Ajax pour le moment. Je pense qu'il faudrait récupérer les commentaires après le script vérifiant la soumission et récupérant le `$_POST` mais en dépit de tous mes essais, ça ne fonctionnait pas.
 
 
 
